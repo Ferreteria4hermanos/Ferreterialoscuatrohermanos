@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" href="ferreteria4h.png" type="ferreteria4h/png">
     <meta charset="UTF-8">
     <title>Ferretería Los 4H | Inicio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <nav class="navbar">
-            <div class="logo-area">
-                <img src="ferreteria4h.png" alt="Logo" class="logo">
-                <span class="brand-name">FERRETERÍA LOS 4H</span>
-            </div>
+        <!-- Contenedor de búsqueda ajustado para el JS -->
+        <div class="search-box">
+            <input type="text" id="miBuscador" oninput="realizarBusqueda(this.value)" placeholder="Buscar herramientas, pintura...">
+            <button type="button"><i class="fas fa-search"></i></button>
+        </div>
 
-            <div class="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
-
-            <div class="search-box">
-                <input type="text" id="miBuscador" oninput="realizarBusqueda(this.value)" placeholder="Buscar herramientas, pintura...">
-                <button type="button"><i class="fas fa-search"></i></button>
-            </div>
-        </nav>
+        <!-- Aquí aparecerán los resultados de la búsqueda -->
+        <div id="contenedor-resultados"></div>
     </header>
 
     <section class="hero">
@@ -40,22 +30,26 @@
 
     <div class="container">
         <h2 class="section-title">Nuestras Especialidades</h2>
+
         <div class="grid-servicios">
             <div class="card">
                 <i class="fas fa-tools"></i>
                 <a href="Herramientas.html"><h3>Herramientas</h3></a>
                 <p>Equipos industriales de alto rendimiento.</p>
             </div>
+
             <div class="card">
                 <i class="fas fa-bolt"></i>
                 <a href="Electricidad.html"><h3>Electricidad</h3></a>
                 <p>Suministros eléctricos de alta calidad.</p>
             </div>
+
             <div class="card">
                 <i class="fas fa-faucet"></i>
                 <a href="Plomeria.html"><h3>Plomería</h3></a> 
                 <p>Tuberías y accesorios para toda obra.</p>
             </div>
+
             <div class="card">
                 <i class="fas fa-paint-roller"></i>
                 <a href="Pintura.html"><h3>Pintura</h3></a>
@@ -68,8 +62,9 @@
         <p>© 2026 Ferretería Los 4H - Ilopango, El Salvador.</p>
     </footer>
 
+    <!-- Script principal que maneja la búsqueda global y el JSON -->
     <script src="script.js"></script>
-</body>
 
+</body>
 </html>
 
