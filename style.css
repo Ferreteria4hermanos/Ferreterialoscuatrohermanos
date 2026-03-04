@@ -63,9 +63,7 @@ header {
     transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: #ffd000;
-}
+.nav-links a:hover { color: #ffd000; }
 
 
 .search-box {
@@ -264,5 +262,6 @@ a {
     display: none;
 
 }
+
 
 
