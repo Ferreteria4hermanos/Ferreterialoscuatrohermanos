@@ -97,7 +97,8 @@ header {
 }
 
 .hero {
-    background-image: url("ferretería4.jpeg");
+    background-image: url('../ferretería4.jpeg');
+
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -263,4 +264,5 @@ a {
     display: none;
 
 }
+
 
